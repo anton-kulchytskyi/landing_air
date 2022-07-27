@@ -1,5 +1,5 @@
 @mixin onSmall {
-  @media (max-width: 320px) {
+  @media (max-width: 639px) {
     @content;
   }
 }

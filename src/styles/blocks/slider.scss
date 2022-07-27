@@ -58,9 +58,15 @@
     align-items: center;
     justify-content: center;
 
-    &:last-child {
-      margin-right: 24px;
+    @include onMobile {
+      flex-direction: column;
+      align-items: flex-start;
     }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 16px;
   }
 
   &__button {
@@ -85,12 +91,10 @@
     line-height: 19px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #fff;
   }
 
   &__description {
     @include description;
     font-size: 14px;
-    color: #fff;
   }
 }
