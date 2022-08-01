@@ -13,6 +13,11 @@
   margin-bottom: 48px;
   color: #fff;
 
+  &:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    transition: background-color 100000s ease-in-out 0s;
+  }
+
   &--message {
     margin-bottom: 80px;
   }
